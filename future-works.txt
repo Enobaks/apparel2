@@ -1,0 +1,2 @@
+-Work on the profile page (make links useful)
+-Add Payment gateway
