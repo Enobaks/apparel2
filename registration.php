@@ -15,16 +15,16 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/icomoon/style.css">
     <!-- owl carousel -->
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <!-- style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <!-- Navbar Begins -->
-    <?php require "includes/navbar.php"?>
+    <?php require "./includes/navbar.php"?>
     <!-- Navbar Ends -->
 
     <!-- Registr 

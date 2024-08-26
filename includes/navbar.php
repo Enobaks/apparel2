@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 navigation-bar fixed-top h-auto">
     <div class="container-fluid">
-        <a class="navbar-brand fs-2 fw-bold" href="../cloth-store/index.php"><span class="text-danger">A</span>pparel</a>
+        <a class="navbar-brand fs-2 fw-bold" href="../apparel2/index.php"><span class="text-danger">A</span>pparel</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <!-- <span class="navbar-toggler-icon"></span> -->
             <i class="fa-solid fa-bars"></i>
@@ -8,24 +8,24 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav m-left me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" aria-current="page" href="../cloth-store/index.php">Home</a>
+                    <a class="nav-link fw-bold" aria-current="page" href="../apparel2">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="../cloth-store/about.php">About Us</a>
+                    <a class="nav-link fw-bold" href="../apparel2/about.php">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link fw-bold dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Product
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="../cloth-store/male_products.php">Male Clothes</a></li>
-                        <li><a class="dropdown-item" href="../cloth-store/female_products.php">Female Clothes</a></li>
+                        <li><a class="dropdown-item" href="../apparel2/male_products.php">Male Clothes</a></li>
+                        <li><a class="dropdown-item" href="../apparel2/female_products.php">Female Clothes</a></li>
                         <!-- <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link fw-bold dropdown-toggle" href="../cloth-store/login.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link fw-bold dropdown-toggle" href="../apparel2/login.php" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-regular fa-user me-2"></i>
                         <?php if (isset($_SESSION['firstname']) && isset($_SESSION['firstname'])) {
                             $splitFirstName = str_split($_SESSION['firstname']);
@@ -42,12 +42,12 @@
                         <?php
                             if (!isset($_SESSION['firstname']) && !isset($_SESSION['lastname'])) {
                         ?>
-                        <li><a class="dropdown-item" href="../cloth-store/login.php">Login</a></li>
-                        <li><a class="dropdown-item" href="../cloth-store/registration.php">Register</a></li>
+                        <li><a class="dropdown-item" href="../apparel2/login.php">Login</a></li>
+                        <li><a class="dropdown-item" href="../apparel2/registration.php">Register</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <!-- <li><a class="dropdown-item" href="../cloth-store/logout.php">Log out</a></li> -->
+                        <!-- <li><a class="dropdown-item" href="../apparel2/logout.php">Log out</a></li> -->
                         <?php }else {?>
-                            <li><a class="dropdown-item" href="../cloth-store/logout.php">Log out</a></li>
+                            <li><a class="dropdown-item" href="../apparel2/logout.php">Log out</a></li>
                         <?php }?>
                     </ul>
                 </li>
@@ -56,15 +56,15 @@
                     if (isset($_SESSION['user_id'])) {
                 ?>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold" href="../cloth-store/orderPage.php">Orders</a>
+                    <a class="nav-link fw-bold" href="../apparel2/orderPage.php">Orders</a>
                 </li>
                 <?php } ?>
                 <li class="nav-item">
-                    <a class="nav-link fw-bold cart-wrap" href="../cloth-store/cart.php">
+                    <a class="nav-link fw-bold cart-wrap" href="../apparel2/cart.php">
                         <i class="fa-solid fa-cart-shopping me-2 cart" style="color: #000000a6"></i>Cart
                         <i class="ti-shopping-cart"></i>
                         <?php
-                        require 'config.php';
+                        require './config.php';
                             if (!isset($_SESSION['user_id'])) {
                         ?>
                         <span class="cart-qty d-none">3</span>
