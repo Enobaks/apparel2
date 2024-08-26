@@ -1,6 +1,2 @@
-<<<<<<< HEAD
 -Work on the profile page (make links useful)
-=======
--Work on the profile page (make links useful)
->>>>>>> f32211d3a14c90db3cb01a860fbfdfb50883ad18
 -Add Payment gateway
